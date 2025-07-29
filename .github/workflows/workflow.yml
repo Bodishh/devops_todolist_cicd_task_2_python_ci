@@ -32,7 +32,7 @@ jobs:
       - name: Run tests with pytest
         continue-on-error: true
         run: |
-          pytest
+          coverage run -m pytest
 
       - name: Generate coverage report
         run: |
